@@ -23,6 +23,7 @@ module.exports = {
         ignorePropertyModificationsFor: ['state', 'config']
       }
     ],
+    'no-undef': 'off',
     'no-unused-vars': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
   },
