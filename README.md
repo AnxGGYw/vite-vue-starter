@@ -1,6 +1,6 @@
-# vite-vue-starter
+## vite-vue-starter
 
-## 一套规范的 Vue3.x 项目工程环境
+#### 一套规范的 Vue3.x 项目工程环境
 
 - Vite + Vue3 + TypeScript + Vue-Router + Pinia + Axios + Less + Naive UI.
 - Git Hook 工具：husky + lint-staged.
