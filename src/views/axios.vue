@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <n-button @click="send" :loading="loading">send http to github</n-button>
 </template>
 <script lang="ts" setup>
