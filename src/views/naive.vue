@@ -15,7 +15,7 @@ import { darkTheme, useMessage } from 'naive-ui'
 
 const message = useMessage()
 
-let theme: any = ref(undefined)
+const theme: any = ref(undefined)
 
 const changeTheme = () => {
   theme.value = theme.value ? undefined : darkTheme

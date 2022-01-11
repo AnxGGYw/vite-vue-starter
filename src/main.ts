@@ -8,5 +8,5 @@ const app = createApp(App)
 app.use(router).use(pinia).use(naive)
 
 router.isReady().then(() => {
-	app.mount('#app')
+  app.mount('#app')
 })

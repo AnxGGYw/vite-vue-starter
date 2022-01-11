@@ -23,7 +23,8 @@ module.exports = {
         ignorePropertyModificationsFor: ['state', 'config']
       }
     ],
-    'import/no-extraneous-dependencies': [error, { devDependencies: true }]
+    'no-unused-vars': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
   },
   settings: {}
 }
