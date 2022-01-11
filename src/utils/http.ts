@@ -30,14 +30,13 @@ instance.interceptors.response.use(
   (response: AxiosResponse): AxiosResponse => {
     if (response.status === 200) {
       return response
-    } else {
-      window.$message.error(response.status)
-      throw new Error(response.status.toString())
     }
+    window.$message.error(response.status)
+    throw new Error(response.status.toString())
   },
   (error: AxiosError) => {
     window.$message.error('服务器异常，请稍后重试 …')
-    return Promise.reject({ code: 500, msg: '服务器异常，请稍后重试 …' })
+    return Promise.reject(new Error('服务器异常，请稍后重试 …'))
   }
 )
 
